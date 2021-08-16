@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="Calculator" Height="450" Width="500">
     <Grid>
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="FontSize" Value="30"/>
+            </Style>
+        </Grid.Resources>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -55,7 +60,7 @@
         <Button Grid.Row="1" Grid.Column="0" Click="Button_Click_Clear">C</Button>
 
         <!-- Number Display text box-->
-        <TextBox  Name ="textDisplay" IsReadOnly="True" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" />
+        <TextBox  Name ="textDisplay" IsReadOnly="True" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="40"/>
 
         <!-- Error Message Text box need to bid error messages to this textbox and hide it until required will add if have enough time-->
         
