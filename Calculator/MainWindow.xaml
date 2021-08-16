@@ -20,42 +20,42 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-           
-
         </Grid.RowDefinitions>
         
         <!--Number buttons-->
-        <Button Grid.Row="2" Grid.Column="0">7</Button>
-        <Button Grid.Row="2" Grid.Column="1">8</Button>
-        <Button Grid.Row="2" Grid.Column="2">9</Button>
+        <Button Grid.Row="2" Grid.Column="0" Click="Button_Click_Seven">7</Button>
+        <Button Grid.Row="2" Grid.Column="1" Click="Button_Click_Eight">8</Button>
+        <Button Grid.Row="2" Grid.Column="2" Click="Button_Click_Nine">9</Button>
 
-        <Button Grid.Row="3" Grid.Column="0">4</Button>
-        <Button Grid.Row="3" Grid.Column="1">5</Button>
-        <Button Grid.Row="3" Grid.Column="2">6</Button>
+        <Button Grid.Row="3" Grid.Column="0" Click="Button_Click_Four">4</Button>
+        <Button Grid.Row="3" Grid.Column="1" Click="Button_Click_Five">5</Button>
+        <Button Grid.Row="3" Grid.Column="2" Click="Button_Click_Six">6</Button>
         
-        <Button Grid.Row="4" Grid.Column="0" Click="Button_Click">1</Button>
-        <Button Grid.Row="4" Grid.Column="1" Click="Button_Click_1">2</Button>
-        <Button Grid.Row="4" Grid.Column="2">3</Button>
-        <Button Grid.Row="5"  Grid.Column="1" >0</Button>
-        <Button Grid.Row="5"  Grid.Column="0" >+/-</Button>
+        <Button Grid.Row="4" Grid.Column="0" Click="Button_Click_One">1</Button>
+        <Button Grid.Row="4" Grid.Column="1" Click="Button_Click_Two">2</Button>
+        <Button Grid.Row="4" Grid.Column="2" Click="Button_Click_Three">3</Button>
+        <Button Grid.Row="5"  Grid.Column="1" Click="Button_Click_Zero" >0</Button>
+        <Button Grid.Row="5"  Grid.Column="0" Click="Button_Click_PosNeg" >+/-</Button>
 
 
         <!--Operand Buttons-->
-        <Button Grid.Row="4"  Grid.Column="4">-</Button>
-
-        <Button Grid.Row="5"  Grid.Column="4">=</Button>
-        <Button Grid.Row="5" Grid.Column="2">.</Button>
-        <Button Grid.Row="3" Grid.Column="3">+</Button>
-        <Button Grid.Row="2" Grid.Column="3">/</Button>
-        <Button Grid.Row="1" Grid.Column="3">*</Button>
-        <Button Grid.Row="1" Grid.Column="2" Content="Back"/>
+        <Button Grid.Row="1" Grid.Column="3" Click="Button_Click_Plus">+</Button>
+        <Button Grid.Row="2"  Grid.Column="4" Click="Button_Click_Minus">-</Button>
+        <Button Grid.Row="3" Grid.Column="3" Click="Button_Click_Multiply">*</Button>
+        <Button Grid.Row="4" Grid.Column="3" Click="Button_Click_Divide">/</Button>
+        <Button Grid.Row="5"  Grid.Column="4" Click="Button_Click_Equals">=</Button>
+        <Button Grid.Row="5" Grid.Column="2" Click="Button_Click_Decimal">.</Button>
+        
+        
+        
+        <Button Grid.Row="1" Grid.Column="2" Content="Back" Click="Button_Click_Back"/>
 
         <!--Clear Buttons-->
-        <Button Grid.Row="1" Grid.Column="1">CE</Button>
-        <Button Grid.Row="1" Grid.Column="0">C</Button>
+        <Button Grid.Row="1" Grid.Column="1" Click="Button_Click_ClearEverything">CE</Button>
+        <Button Grid.Row="1" Grid.Column="0" Click="Button_Click_Clear">C</Button>
 
         <!-- Number Display text box-->
-        <TextBox  Name ="textDisplay" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" />
+        <TextBox  Name ="textDisplay" IsReadOnly="True" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" />
 
         <!-- Error Message Text box need to bid error messages to this textbox and hide it until required will add if have enough time-->
         
